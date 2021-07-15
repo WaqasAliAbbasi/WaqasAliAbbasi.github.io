@@ -28,7 +28,7 @@ A platform for high school students to share useful resources with each other. R
 - S3 Content Storage (DigitalOcean Spaces)
 - HTTPS (Let's Encrypt)
 - 95% Testing Coverage
-- Caching to external services (redis)
+- Caching to external services (Redis)
 - Email and Facebook Authentication
 - Continuous Integration/Deployment (GitHub Actions)
 - Automated Backups
