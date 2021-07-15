@@ -28,7 +28,7 @@ A platform for high school students to share useful resources with each other. R
 - S3 Content Storage (DigitalOcean Spaces)
 - HTTPS (Let's Encrypt)
 - 95% Testing Coverage
-- Caching to external services (node-cache)
+- Caching to external services (redis)
 - Email and Facebook Authentication
 - Continuous Integration/Deployment (GitHub Actions)
 - Automated Backups
@@ -37,6 +37,7 @@ A platform for high school students to share useful resources with each other. R
 - Dynamic Sitemap Generation
 - Google Analytics to track behavior
 - Integration with Google Analytics to show item views
+- Prometheus, Loki & Grafana for monitoring/logs
 
 ## Team
 
