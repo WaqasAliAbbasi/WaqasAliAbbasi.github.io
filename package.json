@@ -4,6 +4,9 @@
   "description": "Personal website of Waqas Ali.",
   "version": "0.1.0",
   "author": "Waqas Ali <waqas.abbasi@outlook.com>",
+  "engines": {
+    "node": "^14"
+  },
   "dependencies": {
     "@chakra-ui/core": "^0.6.1",
     "@emotion/core": "^10.0.28",
@@ -44,6 +47,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "build:gh": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
