@@ -8,7 +8,7 @@ Accessible at [waqasali.dev](https://waqasali.dev)
 - [Chakra UI](https://chakra-ui.com)
 
 ### Deployment
-- GitHub Actions
+- [GitHub Actions](https://github.com/features/actions)
 
 ### Resume
 - [LaTeX](https://www.latex-project.org)

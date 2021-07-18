@@ -10,7 +10,8 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
       - name: Resume 📄
-        run: mkdir -p ./static/assets/docs && cp ./resume/general.pdf ./static/assets/docs/resume.pdf
+        run: |
+          mkdir -p ./static/assets/docs && cp "./resume/$(cat ./resume/RESUME_ON_WEBSITE.txt)" ./static/assets/docs/resume.pdf
       - name: Install 🚚
         run: yarn install
       - name: Build 📦

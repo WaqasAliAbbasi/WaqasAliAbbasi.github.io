@@ -1,11 +1,3 @@
-%-------------------------
-% Resume in Latex
-% Original Author: Sourabh Bajaj
-% Original Repository: https://github.com/sb2nov/resume
-% Adaptation: Waqas Ali
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -72,6 +64,16 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeEducationSubheading}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
@@ -100,9 +102,9 @@
 
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeEducationSubheading
       {The University of Hong Kong}{}
-      {Bachelor of Engineering in Computer Science;  GPA: 3.51/4.30; Full Scholarship}{Sept. 2016 -- May 2020}
+      {Bachelor of Engineering in Computer Science (Minor in Cognitive Science)}{Sept. 2016 -- May 2020}{Full Scholarship}{GPA: 3.51/4.30}
   \resumeSubHeadingListEnd
 
 \section{Experience}
@@ -112,35 +114,33 @@
       {Credit Suisse}{Hong Kong}
       {Software Engineer}{August 2020 - Current}
       \resumeItemListStart
-        \resumeItem{Data Pipeline}
-          {Implemented horizontal auto-scaling by migrating from virtual machines to kubernetes using GitOps for transparent and self-documenting cluster management. Dockerized kotlin apps, deployed kafka/zookeeper/kafka connect and implemented inter-app service discovery using k8s api.}
         \resumeItem{Private Banking}
-          {Improved investment ideas targeting by developing a feature to easily filter clients. Used React, CSS, Typescript to create an on-brand interface and Node.js, MongoDB to enhance the GraphQL API.}
+          {Matched investment ideas with preferences and regulatory requirements of thousands of clients on one screen. Allowed planning, review, preview, and send-off of emails, SMSs, and push notifications. Created on-brand interfaces with advanced filtering and data sourcing using React, Styled Components, and Typescript. Used Node.js \& MongoDB for the GraphQL API.}
         \resumeItem{Campaign Analytics}
-          {Developed real-time campaign analytics by tracking idea conversions using Clojure in a ETL pipeline and visualizing the data using custom CSS charts.}
-        \resumeItem{Data Ingestion}
-          {Implemented periodical transaction data ingestion using Clojure.}
+          {Developed a system to track conversions of the above-mentioned campaigns. Developed performant visualizations using vanilla CSS, virtualized tables, unit-tested filters, and processed data using Clojure in an ETL pipeline.}
         \resumeItem{Gitlab1s}
-          {Ported the open-source \href{http://github1s.com}{github1s.com} project internally to allow quick preview of internal repositories across APAC region.}
+          {Ported the open-source \href{http://github1s.com}{github1s.com} project internally to allow a quick preview of internal repositories across the APAC region.}
+        \resumeItem{Data Pipeline}
+          {Implemented horizontal auto-scaling by migrating from virtual machines to Kubernetes using GitOps for transparent and self-documenting cluster management. Dockerized Kotlin apps, deployed Kafka/ZooKeeper/Kafka Connect, and implemented push-based health monitoring using Kotlin.}
       \resumeItemListEnd
       
     \resumeSubSubheading
       {Software Engineer, Intern}{June - August 2019}
       \resumeItemListStart
         \resumeItem{Client Recommendation}
-          {Developed an idea recommendation platform powered by a content-based machine learning model with TypeScript, GraphQL, React and OAuth. Implemented a continuous integration and deployment pipeline using Docker and Kubernetes.}
+          {Developed an idea recommendation platform powered by a content-based machine learning model with TypeScript, GraphQL, React, and OAuth. Used CSS and Recharts for several visualizations. Implemented continuous integration and deployment using GitLab CI, Docker, and Kubernetes.}
         \resumeItem{CodeIT Suisse}
-        {Developed a programming competition platform for a recruitment event using Java, Spring Boot and React. Added real-time grading, gamification using badges, performance graphs, admin dashboard and BDD testing using Cucumber.}
+        {Developed a programming competition platform for a recruitment event using Java, Spring Boot, and Vue. Added badges for gamification, performance graphs, admin dashboard, real-time grading, and BDD testing using Cucumber.}
     \resumeItemListEnd
 
     \resumeSubheading
       {GRAIL Inc.}{Hong Kong; Menlo Park, CA, USA}
-      {Software Engineer, Intern}{June - August 2018}
+      {Full Stack Software Engineer, Intern}{June - August 2018}
       \resumeItemListStart
-        \resumeItem{Removed the need for manual invoicing}
-          {by implementing a billing system for automated monthly invoicing of customers. Generated PDF for each invoice automatically. Integrated with NetSuite and Salesforce to sync customer information in real-time.}
+        \resumeItem{Removed the need for manual invoicing every month}
+          {by implementing an auto-invoicing system. Auto-generated PDFs for each invoice and integrated with NetSuite and Salesforce to sync customer information in real-time. Developed a dashboard for company finances. Used React, Material UI, Redux, Go, and SQL. Added several unit and integration tests.}
         \resumeItem{Allowed billing flexibility}
-          {by developing a system to make corrections in invoices, add discounts during marketing drives and support special pricing per customer. Used Go, SQL, React and Redux with unit and integration tests.}
+          {by adding features for invoice correction, discount offerings, and special pricing per customer. Worked on both front-end and back-end.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -155,19 +155,21 @@
 
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{StudentBase}
-      {High school community with 10,000 monthly active users (\href{https://studentbase.app}{https://studentbase.app}). GraphQL Server with 90\% testing coverage, React frontend, S3 for content storage, Dockerized, Written in TypeScript, Infrastructure as Code (Terraform), Continuous Integration/Deployment, Seed-funded HK\$100,000 by Hong Kong Science Park.}
     \resumeSubItem{Acumen}
-      {Final Year Project: A distributed system to improve latency, efficiency and throughput of machine learning inference pipelines. Used Tensorflow, gRPC, Docker and Node.js. Paper at \href{https://github.com/WaqasAliAbbasi/HKU-FYP/blob/master/documents/FinalReport/FinalReport.pdf}{github.com/WaqasAliAbbasi/HKU-FYP}}
+      {Final Year Project: A distributed system to improve latency, efficiency, and throughput of machine learning inference pipelines. Used TensorFlow, gRPC, Docker, and Node.js. Paper at \href{https://github.com/WaqasAliAbbasi/HKU-FYP/blob/master/documents/FinalReport/FinalReport.pdf}{github.com/WaqasAliAbbasi/HKU-FYP}}
     \resumeSubItem{DragonSearch}
-      {Academic search engine powered by ElasticSearch that helps filter through millions of papers, authors and topics by asking for real-time user feedback. - Winner of Chengdu80 2019 inter-university FinTech competition}
+      {Academic search engine powered by ElasticSearch that helps filter through millions of papers, authors, and topics by asking for real-time user feedback. - Winner of Chengdu80 2019 inter-university FinTech competition}
+    \resumeSubItem{StudentBase}
+      {High school community with 10,000 monthly active users (\href{https://studentbase.app}{https://studentbase.app}). Infrastructure as Code (Terraform), CI/CD, GraphQL Server with 90\% testing coverage, S3 for content storage, Dockerized, React/Node.js/TypeScript, SSR using Next.js, Seed-funded HK\$100,000 by Hong Kong Science Park.}
     
   \resumeSubHeadingListEnd
 
 \section{Skills \& Additional Experience}
  \resumeSubHeadingListStart
     \resumeSubItem{Languages}
-      {Typescript, CSS, SQL, Clojure, Java, Haskell, Go}
+      {Typescript, CSS, SQL, Clojure, Java, Haskell, Go, Python, Kotlin}
+    \resumeSubItem{Tools/Frameworks}
+      {React, Figma, Material UI, Tailwind CSS, GraphQL, Kubernetes, Django, gRPC}
     \resumeSubItem{Teaching Assistant}
       {ENGG1111 - Computer Programming and Applications}
  \resumeSubHeadingListEnd
