@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+% Original Author: Sourabh Bajaj
+% Original Repository: https://github.com/sb2nov/resume
+% Adaptation: Waqas Ali
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://waqasali.dev/}{\Large Waqas Ali}} &  \href{mailto:waqas.abbasi@outlook.com}{waqas.abbasi@outlook.com}\\
+  \href{https://waqasali.dev/}{https://waqasali.dev} & \href{tel:+85259867711}{+852 5986 7711}\\
+\end{tabular*}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Hong Kong}{}
+      {Bachelor of Engineering in Computer Science;  GPA: 3.51/4.30; Full Scholarship}{Sept. 2016 -- May 2020}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Credit Suisse}{Hong Kong}
+      {Software Engineer}{August 2020 - Current}
+      \resumeItemListStart
+        \resumeItem{Data Pipeline}
+          {Implemented horizontal auto-scaling by migrating from virtual machines to kubernetes using GitOps for transparent and self-documenting cluster management. Dockerized kotlin apps, deployed kafka/zookeeper/kafka connect and implemented inter-app service discovery using k8s api.}
+        \resumeItem{Private Banking}
+          {Improved investment ideas targeting by developing a feature to easily filter clients. Used React, CSS, Typescript to create an on-brand interface and Node.js, MongoDB to enhance the GraphQL API.}
+        \resumeItem{Campaign Analytics}
+          {Developed real-time campaign analytics by tracking idea conversions using Clojure in a ETL pipeline and visualizing the data using custom CSS charts.}
+        \resumeItem{Data Ingestion}
+          {Implemented periodical transaction data ingestion using Clojure.}
+        \resumeItem{Gitlab1s}
+          {Ported the open-source \href{http://github1s.com}{github1s.com} project internally to allow quick preview of internal repositories across APAC region.}
+      \resumeItemListEnd
+      
+    \resumeSubSubheading
+      {Software Engineer, Intern}{June - August 2019}
+      \resumeItemListStart
+        \resumeItem{Client Recommendation}
+          {Developed an idea recommendation platform powered by a content-based machine learning model with TypeScript, GraphQL, React and OAuth. Implemented a continuous integration and deployment pipeline using Docker and Kubernetes.}
+        \resumeItem{CodeIT Suisse}
+        {Developed a programming competition platform for a recruitment event using Java, Spring Boot and React. Added real-time grading, gamification using badges, performance graphs, admin dashboard and BDD testing using Cucumber.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {GRAIL Inc.}{Hong Kong; Menlo Park, CA, USA}
+      {Software Engineer, Intern}{June - August 2018}
+      \resumeItemListStart
+        \resumeItem{Removed the need for manual invoicing}
+          {by implementing a billing system for automated monthly invoicing of customers. Generated PDF for each invoice automatically. Integrated with NetSuite and Salesforce to sync customer information in real-time.}
+        \resumeItem{Allowed billing flexibility}
+          {by developing a system to make corrections in invoices, add discounts during marketing drives and support special pricing per customer. Used Go, SQL, React and Redux with unit and integration tests.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Microsoft}{Hong Kong}
+      {Technology Solutions Professional, Intern}{June - August 2017}
+      \resumeItemListStart
+        \resumeItem{Reduced time for sales to find Azure offerings for clients}
+          {through a web app that allowed convenient searching and filtering of offered products with comparisons to competitors such as AWS.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{StudentBase}
+      {High school community with 10,000 monthly active users (\href{https://studentbase.app}{https://studentbase.app}). GraphQL Server with 90\% testing coverage, React frontend, S3 for content storage, Dockerized, Written in TypeScript, Infrastructure as Code (Terraform), Continuous Integration/Deployment, Seed-funded HK\$100,000 by Hong Kong Science Park.}
+    \resumeSubItem{Acumen}
+      {Final Year Project: A distributed system to improve latency, efficiency and throughput of machine learning inference pipelines. Used Tensorflow, gRPC, Docker and Node.js. Paper at \href{https://github.com/WaqasAliAbbasi/HKU-FYP/blob/master/documents/FinalReport/FinalReport.pdf}{github.com/WaqasAliAbbasi/HKU-FYP}}
+    \resumeSubItem{DragonSearch}
+      {Academic search engine powered by ElasticSearch that helps filter through millions of papers, authors and topics by asking for real-time user feedback. - Winner of Chengdu80 2019 inter-university FinTech competition}
+    
+  \resumeSubHeadingListEnd
+
+\section{Skills \& Additional Experience}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {Typescript, CSS, SQL, Clojure, Java, Haskell, Go}
+    \resumeSubItem{Teaching Assistant}
+      {ENGG1111 - Computer Programming and Applications}
+ \resumeSubHeadingListEnd
+
+\end{document}
