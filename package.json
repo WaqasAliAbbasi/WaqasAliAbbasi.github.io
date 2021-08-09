@@ -15,7 +15,7 @@
     "@mdx-js/react": "^1.5.7",
     "emotion-theming": "^10.0.27",
     "gatsby": "^3.11.1",
-    "gatsby-image": "^3.9.0",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-chakra-ui": "^0.1.4",
     "gatsby-plugin-google-analytics": "^3.11.0",
     "gatsby-plugin-manifest": "^3.9.0",
