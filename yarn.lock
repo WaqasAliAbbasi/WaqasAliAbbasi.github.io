@@ -1037,10 +1037,10 @@
     core-js-pure "^3.15.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.13", "@babel/runtime@^7.14.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
-  version "7.14.6"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.6.tgz#535203bc0892efc7dec60bdc27b2ecf6e409062d"
-  integrity sha512-/PCB2uJ7oM44tz8YhC4Z/6PeOKXp4K588f+5M3clr1M4zbqztlo0XEfJ2LEzj/FgwfgGcIdl8n7YYjTCI0BYwg==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.13", "@babel/runtime@^7.14.0", "@babel/runtime@^7.14.6", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+  version "7.14.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.8.tgz#7119a56f421018852694290b9f9148097391b446"
+  integrity sha512-twj3L8Og5SaCRCErB4x4ajbvBIVV77CGeFglHpeg5WC5FF8TZzBWXtTJ4MqaD9QszLYTtr+IsaAL2rEUevb+eg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -6431,12 +6431,12 @@ gatsby-plugin-chakra-ui@^0.1.4:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-chakra-ui/-/gatsby-plugin-chakra-ui-0.1.5.tgz#3586f6661fca04603f7b401525e08f93a2e0751e"
   integrity sha512-60y4x71Bi4I9DrbxHXFdAddPzrLea2tvwCWzIFvoaVCC7fPvjCn9r+DCatlYzWDWP80bwaULV1yM7MnODted2w==
 
-gatsby-plugin-google-analytics@^3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-3.9.0.tgz#550cf9a31d05c8f627d7a963df0acaafef416849"
-  integrity sha512-vK/NEl4uJI6QdlhK+CwCsMdEw5Ikl0bKi/TYjoCn0mjN/45qlxlOL2Yz7r813dD742hdz75HQhxedWG9MRH2Cg==
+gatsby-plugin-google-analytics@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-3.11.0.tgz#20d060320955d051f94b8867074d0b8a68f167af"
+  integrity sha512-GX+hVg8ma6L8bXfeJLitTeIi06MVfo3wFnsl0VhsIdVQ/i6NJdG6y0G2Cw1hPWdqnoJG9Y4YTiJkcZP330gmuQ==
   dependencies:
-    "@babel/runtime" "^7.14.0"
+    "@babel/runtime" "^7.14.6"
     minimatch "3.0.4"
     web-vitals "^1.1.2"
 
