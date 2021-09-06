@@ -23,7 +23,7 @@
     "gatsby-plugin-offline": "^4.13.0",
     "gatsby-plugin-react-helmet": "^4.13.0",
     "gatsby-plugin-sharp": "^3.13.0",
-    "gatsby-plugin-typescript": "^3.9.0",
+    "gatsby-plugin-typescript": "^3.13.0",
     "gatsby-plugin-typescript-checker": "^1.1.1",
     "gatsby-remark-images": "^5.10.0",
     "gatsby-source-filesystem": "^3.12.0",
