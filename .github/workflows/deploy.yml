@@ -17,6 +17,7 @@ jobs:
       - name: Build 📦
         run: yarn build:gh
       - name: Deploy 🚀
+        if: github.actor != 'dependabot[bot]'
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
