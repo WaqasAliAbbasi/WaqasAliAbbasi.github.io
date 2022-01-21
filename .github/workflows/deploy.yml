@@ -9,6 +9,10 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
+      - name: Setup Node.js 🥗
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
       - name: Resume 📄
         run: |
           mkdir -p ./static/assets/docs && cp "./resume/$(cat ./resume/RESUME_ON_WEBSITE.txt)" ./static/assets/docs/resume.pdf
