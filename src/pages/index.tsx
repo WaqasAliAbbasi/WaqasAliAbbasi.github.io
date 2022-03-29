@@ -12,7 +12,7 @@ import {
   StatHelpText,
   Divider,
   Text,
-  Flex
+  Flex,
 } from "@chakra-ui/core";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -50,7 +50,6 @@ const IndexPage = () => {
           linkedin
           github
           email
-          twitter
         }
       }
     }
@@ -88,11 +87,6 @@ const IndexPage = () => {
           url={`https://github.com/${github}`}
           text="GitHub"
           icon={FaGithub}
-        />
-        <SocialLink
-          url={`https://twitter.com/${twitter}`}
-          text="Twitter"
-          icon={FaTwitter}
         />
       </Flex>
     </Layout>

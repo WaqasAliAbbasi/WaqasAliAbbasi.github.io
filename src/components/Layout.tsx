@@ -28,7 +28,7 @@ export const Layout: React.FunctionComponent<{
     <Flex
       direction="column"
       minHeight="100vh"
-      maxWidth="29rem"
+      maxWidth="42rem"
       marginX="auto"
       padding="2.625rem 1.3125rem"
     >
