@@ -72,6 +72,16 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeEducationSubheading}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
@@ -94,82 +104,75 @@
 \begin{document}
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://waqasali.dev/}{\Large Waqas Ali}} &  \href{mailto:waqas.abbasi@outlook.com}{waqas.abbasi@outlook.com}\\
-  \href{https://waqasali.dev/}{https://waqasali.dev} & \href{tel:+85259867711}{+852 5986 7711}\\
+  \textbf{\href{https://waqasali.dev/}{\Large Waqas Ali}} & \href{http://linkedin.com/in/waqasaliabbasi}{linkedin.com/in/waqasaliabbasi}\\
+  \href{mailto:waqas.abbasi@outlook.com}{waqas.abbasi@outlook.com} & \href{tel:+85259867711}{+852 5986 7711}\\
 \end{tabular*}
-
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {The University of Hong Kong}{}
-      {Bachelor of Engineering in Computer Science;  GPA: 3.51/4.30; Full Scholarship}{Sept. 2016 -- May 2020}
-  \resumeSubHeadingListEnd
 
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
       {Credit Suisse}{Hong Kong}
-      {Software Engineer}{August 2020 - Current}
+      {Full Stack Software Engineer}{August 2020 - Current}
       \resumeItemListStart
-        \resumeItem{Data Pipeline}
-          {Implemented horizontal auto-scaling by migrating from virtual machines to kubernetes using GitOps for transparent and self-documenting cluster management. Dockerized kotlin apps, deployed kafka/zookeeper/kafka connect and implemented inter-app service discovery using k8s api.}
-        \resumeItem{Private Banking}
-          {Improved investment ideas targeting by developing a feature to easily filter clients. Used React, CSS, Typescript to create an on-brand interface and Node.js, MongoDB to enhance the GraphQL API.}
-        \resumeItem{Campaign Analytics}
-          {Developed real-time campaign analytics by tracking idea conversions using Clojure in a ETL pipeline and visualizing the data using custom CSS charts.}
-        \resumeItem{Data Ingestion}
-          {Implemented periodical transaction data ingestion using Clojure.}
-        \resumeItem{Gitlab1s}
-          {Ported the open-source \href{http://github1s.com}{github1s.com} project internally to allow quick preview of internal repositories across APAC region.}
+        \resumeItem{Instrument Events}
+          {Analysed 1M rows of new research, market, corporate, and news data of 50,000 instruments under 10 minutes every day using Apache Spark jobs written in Clojure and executed with auto-scaling on Kubernetes.}
+        \resumeItem{Client Advisory}
+          {Saved hundreds of monthly work hours by automating the manual process of targeting new investment ideas across 5,000 ultra-high-net-worth clients according to their regulatory requirements and investment preferences.}
+        \resumeItem{Digital Advisory}
+          {Improved front office productivity by 10x by replacing manual emails with a platform allowing generation, review, preview, send-off, and conversion-tracking of emails, SMSs, and push notifications. (React, Styled Components, Typescript, Node.js, MongoDB, GraphQL)}
+        \resumeItem{Risk Data Aggregation}
+          {Doubled throughput and saved unnecessary compute by migrating pipeline from parallel threads running in a monolith on a virtual machine to 25 individual task processors running on Kubernetes with horizontal pod auto-scaling based on queue size. (Kotlin, Kafka, ZooKeeper, Kafka Connect, Flux GitOps).}
+        \resumeItem{Reuters Market Data System}
+          {Removed production errors by 80\% by rewriting an unreliable closed-source JNI library in Clojure. Implemented PermServer protocol over TCP sockets using clojure.async.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {StudentBase Limited}{Hong Kong}
+      {Founder, Full Stack Software Engineer}{June 2019  - March 2022}
+      \resumeItemListStart
+        \resumeItem{Resource Sharing Platform}
+          {Developed a platform for high school students used by 10,000 unique users every month. Implemented features such as content upload, moderator approval, comments, upvotes, past paper solving, mistake tracking, and bookmarking. Gained code confidence by prioritising tests and achieving 90\% testing coverage. (React, Next.js, TypeScript, Node.js, GraphQL, Prisma, S3)}
+        \resumeItem{Automated Infrastructure}
+          {Improved release reliability by implementing continuous integration and deployment with GitHub Actions. Wrote the entire infrastructure as code using Terraform.}
+        \resumeItem{Team Management}
+          {Managed a team of 4 part-time engineers and an intern to build a successful ed-tech platform from scratch. Seed-funded HK\$100,000 by Hong Kong Science Park. Folded the company in March 2022 and stopped feature development; Currently operating as a non-profit.}
       \resumeItemListEnd
       
-    \resumeSubSubheading
-      {Software Engineer, Intern}{June - August 2019}
-      \resumeItemListStart
-        \resumeItem{Client Recommendation}
-          {Developed an idea recommendation platform powered by a content-based machine learning model with TypeScript, GraphQL, React and OAuth. Implemented a continuous integration and deployment pipeline using Docker and Kubernetes.}
-        \resumeItem{CodeIT Suisse}
-        {Developed a programming competition platform for a recruitment event using Java, Spring Boot and React. Added real-time grading, gamification using badges, performance graphs, admin dashboard and BDD testing using Cucumber.}
-    \resumeItemListEnd
+    \resumeSubheading
+      {Credit Suisse}{Hong Kong}
+      {Software Engineer, Intern (TypeScript, Java, React, CSS, Docker, Spring Boot)}{Summer 2019}
 
     \resumeSubheading
-      {GRAIL Inc.}{Hong Kong; Menlo Park, CA, USA}
-      {Software Engineer, Intern}{June - August 2018}
-      \resumeItemListStart
-        \resumeItem{Removed the need for manual invoicing}
-          {by implementing a billing system for automated monthly invoicing of customers. Generated PDF for each invoice automatically. Integrated with NetSuite and Salesforce to sync customer information in real-time.}
-        \resumeItem{Allowed billing flexibility}
-          {by developing a system to make corrections in invoices, add discounts during marketing drives and support special pricing per customer. Used Go, SQL, React and Redux with unit and integration tests.}
-      \resumeItemListEnd
+      {GRAIL Inc.}{Hong Kong; Menlo Park}
+      {Full Stack Software Engineer, Intern (JavaScript, Go, React, Redux, SQL)}{Summer 2018}
 
     \resumeSubheading
       {Microsoft}{Hong Kong}
-      {Technology Solutions Professional, Intern}{June - August 2017}
-      \resumeItemListStart
-        \resumeItem{Reduced time for sales to find Azure offerings for clients}
-          {through a web app that allowed convenient searching and filtering of offered products with comparisons to competitors such as AWS.}
-      \resumeItemListEnd
+      {Technology Solutions Professional, Intern (JavaScript, Python, jQuery)}{Summer 2017}
 
   \resumeSubHeadingListEnd
 
-\section{Projects}
+\section{Education}
   \resumeSubHeadingListStart
-    \resumeSubItem{StudentBase}
-      {High school community with 10,000 monthly active users (\href{https://studentbase.app}{https://studentbase.app}). GraphQL Server with 90\% testing coverage, React frontend, S3 for content storage, Dockerized, Written in TypeScript, Infrastructure as Code (Terraform), Continuous Integration/Deployment, Seed-funded HK\$100,000 by Hong Kong Science Park.}
-    \resumeSubItem{Acumen}
-      {Final Year Project: A distributed system to improve latency, efficiency and throughput of machine learning inference pipelines. Used Tensorflow, gRPC, Docker and Node.js. Paper at \href{https://github.com/WaqasAliAbbasi/HKU-FYP/blob/master/documents/FinalReport/FinalReport.pdf}{github.com/WaqasAliAbbasi/HKU-FYP}}
-    \resumeSubItem{DragonSearch}
-      {Academic search engine powered by ElasticSearch that helps filter through millions of papers, authors and topics by asking for real-time user feedback. - Winner of Chengdu80 2019 inter-university FinTech competition}
-    
+    \resumeEducationSubheading
+      {The University of Hong Kong}{}
+      {Bachelor of Engineering in Computer Science (Minor in Cognitive Science)}{3.51/4.30 GPA}{Full Scholarship}{Sept. 2016 -- May 2020}
+  \resumeSubHeadingListEnd
+ 
+\section{Open Source Contributions}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Geni}
+      {Increased developer productivity by removing the need to explicitly specify Apache Spark DataFrame schemas and rows. Implemented on-the-fly parsing and transformation of nested Clojure data structures to Spark DataFrames. \href{https://github.com/zero-one-group/geni/pull/336}{\#336} \href{https://github.com/zero-one-group/geni/pull/340}{\#340}}
+    \resumeSubItem{VSCode}
+      {Improved link highlighting in markdown files as per CommonMark Spec. (TypeScript, Electron) \href{https://github.com/microsoft/vscode/pull/140816}{PR \#140816}}
   \resumeSubHeadingListEnd
 
-\section{Skills \& Additional Experience}
+\section{Skills}
  \resumeSubHeadingListStart
     \resumeSubItem{Languages}
-      {Typescript, CSS, SQL, Clojure, Java, Haskell, Go}
-    \resumeSubItem{Teaching Assistant}
-      {ENGG1111 - Computer Programming and Applications}
+      {TypeScript, Clojure, CSS, SQL, Java, Kotlin}
+    \resumeSubItem{Tools/Frameworks}
+      {React, Node.js, Figma, GraphQL, Kubernetes, Apache Spark}
  \resumeSubHeadingListEnd
 
 \end{document}

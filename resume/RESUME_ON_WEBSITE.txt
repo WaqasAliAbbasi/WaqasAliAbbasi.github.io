@@ -1,1 +1,1 @@
-./specific/frontend/frontend.pdf
+./general.pdf
