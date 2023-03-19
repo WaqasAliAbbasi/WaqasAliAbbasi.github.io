@@ -15,7 +15,10 @@ jobs:
           node-version: '14'
       - name: Resume 📄
         run: |
-          mkdir -p ./static/assets/docs && cp "./resume/$(cat ./resume/RESUME_ON_WEBSITE.txt)" ./static/assets/docs/resume.pdf
+          mkdir -p ./static/assets/docs
+          cp ./resume/specific/**/*.pdf ./static/assets/docs/
+          cp ./resume/*.pdf ./static/assets/docs/
+          cp "./resume/$(cat ./resume/RESUME_ON_WEBSITE.txt)" ./static/assets/docs/resume.pdf
       - name: Install 🚚
         run: yarn install
       - name: Build 📦
