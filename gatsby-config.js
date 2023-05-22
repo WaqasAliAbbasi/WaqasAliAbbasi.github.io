@@ -12,10 +12,13 @@ module.exports = {
     `gatsby-plugin-typescript`,
     "gatsby-plugin-typescript-checker",
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "UA-46712607-5",
-        head: true,
+        trackingIds: ["G-NTMPZXFZ7E"],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -75,4 +78,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  trailingSlash: "never",
 };

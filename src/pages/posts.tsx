@@ -29,8 +29,8 @@ const Post: React.FC<PostData> = ({ title, path, excerpt, date }) => (
 
 const Posts: React.FC<any> = ({
   data: {
-    allMdx: { edges }
-  }
+    allMdx: { edges },
+  },
 }) => {
   const posts = edges.map(
     ({ node: { frontmatter } }: any) => frontmatter
@@ -53,7 +53,7 @@ export const postsQuery = graphql`
   query {
     allMdx(
       filter: { fileAbsolutePath: { regex: "/src/posts/" } }
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: { date: DESC } }
       limit: 1000
     ) {
       edges {

@@ -17,7 +17,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       allMdx(
         filter: { fileAbsolutePath: { regex: "/src/projects/" } }
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { frontmatter: { date: DESC } }
         limit: 1000
       ) {
         edges {
@@ -40,7 +40,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.path,
       component: projectTemplate,
-      context: {}
+      context: {},
     });
   });
 
@@ -50,7 +50,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     {
       allMdx(
         filter: { fileAbsolutePath: { regex: "/src/posts/" } }
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { frontmatter: { date: DESC } }
         limit: 1000
       ) {
         edges {
@@ -73,7 +73,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.path,
       component: postTemplate,
-      context: {}
+      context: {},
     });
   });
 };
