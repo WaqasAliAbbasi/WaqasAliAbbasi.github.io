@@ -1,80 +1,46 @@
 import React from "react";
-import { TiHomeOutline } from "react-icons/ti";
-import { globalHistory } from "@reach/router";
-import {
-  Flex,
-  Heading,
-  useColorMode,
-  Box,
-  Text,
-  Link,
-  IconButton,
-} from "@chakra-ui/core";
+import Image from "next/image";
+import Link from "next/link";
 
-import { Portrait } from ".";
-import { InternalLink } from "./InternalLink";
-import { getPrimaryColor } from "../theme";
+import portrait from "@/assets/portrait.jpg";
 
-export const Header: React.FunctionComponent<{ siteTitle: string }> = ({
-  siteTitle,
-}) => {
-  const { colorMode, toggleColorMode } = useColorMode();
+import HomeIcon from "@heroicons/react/24/outline/HomeIcon";
+import { ToggleTheme } from "./ToggleTheme";
+
+export const Header: React.FC<{ siteTitle?: string }> = ({ siteTitle }) => {
   const navigationBar: { title: string; path: string }[] = [
     // { title: "Awards", path: "/achievements" },
     // { title: "Projects", path: "/work" },
-    // { title: "Posts", path: "/posts" }
+    // { title: "Posts", path: "/posts" },
   ];
 
   return (
-    <Flex as="nav" direction="column">
-      <Flex justify="space-between" align="center">
-        <InternalLink to="/">
-          <Flex align="center">
-            <Portrait />
-            <Heading marginLeft={3} textAlign="center">
-              {siteTitle}
-            </Heading>
-          </Flex>
-        </InternalLink>
-        <IconButton
-          aria-label="Dark Mode"
-          size="xs"
-          variant="outline"
-          icon={colorMode === "dark" ? "sun" : "moon"}
-          onClick={toggleColorMode}
-        />
-      </Flex>
-      <Flex align="center" marginTop={3} marginLeft={2} wrap="wrap">
-        <InternalLink to={"/"}>
-          <Box
-            as={TiHomeOutline}
-            size="15px"
-            color={
-              `/${globalHistory.location.pathname.split("/")?.[1]}` === "/"
-                ? getPrimaryColor(colorMode)
-                : undefined
-            }
+    <>
+      <div className="flex flex-row justify-between items-center">
+        <Link href="/" className="flex flex-row items-center gap-4">
+          <Image
+            alt="Waqas Ali Portrait"
+            src={portrait}
+            className="inline-block h-16 w-16 rounded-full"
           />
-        </InternalLink>
-        <Text marginX={2}>|</Text>
-        <Link href="/assets/docs/resume.pdf" marginRight={2}>
-          Resume
+          <h1 className="text-2xl font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
+            Waqas Ali
+          </h1>
         </Link>
+        <ToggleTheme />
+      </div>
+      <div className="flex flex-row flex-wrap gap-x-2 items-center">
+        <Link href="/">
+          <HomeIcon className="w-4" />
+        </Link>
+        <span>|</span>
+        <Link href="/assets/docs/resume.pdf">Resume</Link>
         {navigationBar.map(({ title, path }) => (
-          <Flex marginRight={2} key={path}>
-            <InternalLink
-              to={path}
-              color={
-                `/${globalHistory.location.pathname.split("/")?.[1]}` === path
-                  ? getPrimaryColor(colorMode)
-                  : undefined
-              }
-            >
-              {title}
-            </InternalLink>
-          </Flex>
+          <Link key={path} href={path}>
+            {title}
+          </Link>
         ))}
-      </Flex>
-    </Flex>
+      </div>
+    </>
   );
 };

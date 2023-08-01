@@ -15,17 +15,19 @@ jobs:
           node-version: "18"
       - name: Resume 📄
         run: |
-          mkdir -p ./static/assets/docs
-          cp ./resume/specific/**/*.pdf ./static/assets/docs/
-          cp ./resume/*.pdf ./static/assets/docs/
-          cp "./resume/$(cat ./resume/RESUME_ON_WEBSITE.txt)" ./static/assets/docs/resume.pdf
+          mkdir -p ./public/assets/docs
+          cp ./resume/specific/**/*.pdf ./public/assets/docs/
+          cp ./resume/*.pdf ./public/assets/docs/
+          cp "./resume/$(cat ./resume/RESUME_ON_WEBSITE.txt)" ./public/assets/docs/resume.pdf
       - name: Install 🚚
-        run: yarn install
+        run: npm install
       - name: Build 📦
-        run: yarn build:gh
+        run: |
+          npm run build
+          touch out/.nojekyll
       - name: Deploy 🚀
         if: github.actor != 'dependabot[bot]'
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: public
+          folder: out

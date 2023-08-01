@@ -1,14 +1,18 @@
 # Personal Website
 
 Accessible at [waqasali.dev](https://waqasali.dev)
-### UI
+
+## UI
+
 - [React](https://reactjs.org)
 - [Typescript](https://www.typescriptlang.org)
-- [Gatsby](https://www.gatsbyjs.com)
-- [Chakra UI](https://chakra-ui.com)
+- [Next.js](https://nextjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
 
-### Deployment
+## Deployment
+
 - [GitHub Actions](https://github.com/features/actions)
 
-### Resume
+## Resume
+
 - [LaTeX](https://www.latex-project.org)

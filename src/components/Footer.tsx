@@ -1,17 +1,16 @@
 import React from "react";
-import { Flex, Text, Divider } from "@chakra-ui/core";
 
-export const Footer: React.FunctionComponent<{ lastUpdated: string, shortHash: string }> = ({
-  lastUpdated,
-  shortHash
-}) => {
-  return (
-    <Flex marginTop="1px" as="footer" justify="center">
-      <Text fontSize="xs">#{shortHash}</Text>
-      <Divider orientation="vertical" />
-      <Text fontSize="xs">Last Updated: {lastUpdated}</Text>
-      <Divider orientation="vertical" />
-      <Text fontSize="xs">© {new Date().getFullYear()}</Text>
-    </Flex>
-  );
-};
+export const Footer: React.FC<
+  React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLHRElement>
+> = ({ className = "", ...props }) => (
+  <footer
+    className={`flex mt-1 justify-center items-center text-xs gap-x-1 ${className}`}
+    {...props}
+  >
+    <span>{process.env.GIT_COMMIT_SHA}</span>
+    <span className="text-gray-300 dark:text-gray-700">|</span>
+    <span>Last Updated: 15 July 2021</span>
+    <span className="text-gray-300  dark:text-gray-700">|</span>
+    <span>© {new Date().getFullYear()}</span>
+  </footer>
+);
