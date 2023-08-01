@@ -5,7 +5,7 @@ const GIT_COMMIT_SHA =
         cwd: __dirname,
         encoding: "utf8",
       })
-    : "#ab1cde2";
+    : "ab1cde2";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -17,7 +17,7 @@ const nextConfig = {
     mdxRs: true,
   },
   env: {
-    GIT_COMMIT_SHA: GIT_COMMIT_SHA,
+    GIT_COMMIT_SHA: `#${GIT_COMMIT_SHA}`,
   },
 };
 
