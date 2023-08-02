@@ -13,12 +13,20 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
-      - name: Resume 📄
+      - name: Prepare Resume 📝
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: |
+            resume/*.tex
+            resume/specific/**/*.tex
+          glob_root_file: true
+          work_in_root_file_dir: true
+      - name: Copy Resume 📄
         run: |
           mkdir -p ./public/assets/docs
           cp ./resume/specific/**/*.pdf ./public/assets/docs/
           cp ./resume/*.pdf ./public/assets/docs/
-          cp "./resume/$(cat ./resume/RESUME_ON_WEBSITE.txt)" ./public/assets/docs/resume.pdf
+          cp "./public/assets/docs/$(cat ./resume/RESUME_ON_DISPLAY).pdf" ./public/assets/docs/resume.pdf
       - name: Install 🚚
         run: npm install
       - name: Build 📦
