@@ -34,7 +34,7 @@ export const Header: React.FC<{ siteTitle?: string }> = ({ siteTitle }) => {
           <HomeIcon className="w-4" />
         </Link>
         <span>|</span>
-        <Link href="/assets/docs/resume.pdf">Resume</Link>
+        <Link href="/assets/docs/resume.pdf" target="_blank">Resume</Link>
         {navigationBar.map(({ title, path }) => (
           <Link key={path} href={path}>
             {title}
