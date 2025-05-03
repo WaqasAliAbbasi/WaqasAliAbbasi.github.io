@@ -29,7 +29,7 @@ export default function Page() {
     <div className="flex flex-col gap-4">
       <Panel
         subheading="Currently"
-        heading="Credit Suisse"
+        heading="Qube Research & Technologies"
         subtitle="Software Engineer"
       />
       <Divider />
