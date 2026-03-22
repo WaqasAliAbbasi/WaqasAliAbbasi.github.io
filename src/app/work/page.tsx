@@ -1,12 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import { metadata as StudentBaseMetaData } from "./studentbase/page";
-import { metadata as PipoMetaData } from "./pipo/page";
-import { metadata as FutMetaData } from "./fut/page";
-import { metadata as DragonSearchMetaData } from "./dragonsearch/page";
-import { metadata as ConsiliaMetaData } from "./consilia/page";
-import { metadata as ChiSunMobileAppMetaData } from "./chisunmobileapp/page";
-import { metadata as BigTwoMetaData } from "./bigtwo/page";
 import { ProjectMetaData } from "@/types/content";
 import dayjs from "dayjs";
 import React from "react";
@@ -21,30 +15,6 @@ const projects: Array<{ slug: string; metadata: ProjectMetaData }> = [
   {
     slug: "studentbase",
     metadata: StudentBaseMetaData,
-  },
-  {
-    slug: "pipo",
-    metadata: PipoMetaData,
-  },
-  {
-    slug: "fut",
-    metadata: FutMetaData,
-  },
-  {
-    slug: "dragonsearch",
-    metadata: DragonSearchMetaData,
-  },
-  {
-    slug: "consilia",
-    metadata: ConsiliaMetaData,
-  },
-  {
-    slug: "chisunmobileapp",
-    metadata: ChiSunMobileAppMetaData,
-  },
-  {
-    slug: "bigtwo",
-    metadata: BigTwoMetaData,
   },
 ].sort((a, b) => b.metadata.date.getTime() - a.metadata.date.getTime());
 

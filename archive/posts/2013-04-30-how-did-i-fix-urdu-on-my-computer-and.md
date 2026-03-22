@@ -60,7 +60,7 @@ The problem is that not all websites can be covered by the code, otherwise there
 
 To add more just add these lines before _//_ _==/UserScript==_ in the downloaded file:
 
-> // @match https://*.(to be changed)/_
+> // @match https://\*.(to be changed)/_
 > // @include https://_.(to be changed)/\*
 
 For example if you want to include facebook write "facebook.com" in place of "(to be changed)" . Don't include "www."

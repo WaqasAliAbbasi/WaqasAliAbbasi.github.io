@@ -1,6 +1,6 @@
 ---
 title: "NexusGraph"
-date: '2018-07-08T12:00:00.000+08:00'
+date: "2018-07-08T12:00:00.000+08:00"
 excerpt: "A 3D network visualization tool for new client identification with knowledge-based AI, for a wide variety of applications ranging from private equity, venture capital, private wealth management and many more."
 header:
   teaser: nexusgraph_teaser.png
@@ -30,7 +30,7 @@ A 3D network visualization tool for new client identification with knowledge-bas
 
 ## Links
 
-* [GitHub](https://github.com/piy0999/NexusChain)
+- [GitHub](https://github.com/piy0999/NexusChain)
 
 ## Team
 

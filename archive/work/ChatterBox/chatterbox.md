@@ -1,6 +1,6 @@
 ---
 title: "ChatterBox"
-date: '2017-12-10T12:00:00.000+08:00'
+date: "2017-12-10T12:00:00.000+08:00"
 excerpt: "A chatting web app made entirely in MEAN."
 header:
   teaser: chat_screen.png
@@ -27,7 +27,7 @@ A chatting web app made entirely in MEAN.
 
 ## Links
 
-* [GitHub](http://github.com/WaqasAliAbbasi/ChatterBox)
+- [GitHub](http://github.com/WaqasAliAbbasi/ChatterBox)
 
 This is a fully working chatting app with the following features:
 

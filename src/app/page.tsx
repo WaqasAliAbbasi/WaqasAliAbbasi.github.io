@@ -11,13 +11,11 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home | Waqas Ali",
-  description:
-    "Hi, I am Waqas and this is my personal website describing my projects, experience and achievements so far.",
+  description: "Hi, I am Waqas and this is my personal website.",
   openGraph: {
     title: "Home | Waqas Ali",
     url: "https://waqasali.dev",
-    description:
-      "Hi, I am Waqas and this is my personal website describing my projects, experience and achievements so far.",
+    description: "Hi, I am Waqas and this is my personal website.",
     siteName: "Waqas Ali",
     locale: "en_US",
     type: "website",

@@ -4,14 +4,15 @@
   "version": "0.3.0",
   "private": true,
   "engines": {
-    "node": "^18"
+    "node": "^22"
   },
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pretty": "prettier -w ."
   },
   "dependencies": {
     "@headlessui/react": "^1.7.16",
@@ -43,5 +44,8 @@
   },
   "bugs": {
     "url": "https://github.com/WaqasAliAbbasi/WaqasAliAbbasi.github.io/issues"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
   }
 }

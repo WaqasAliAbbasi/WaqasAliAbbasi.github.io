@@ -1,8 +1,8 @@
 ---
 title: Dawn Spelling Bee 2012 - A Great Experience
-date: '2012-10-05T17:52:00.000+05:00'
+date: "2012-10-05T17:52:00.000+05:00"
 excerpt: "My experience of going to Karachi and participating in the Dawn Spelling Bee 2012."
-tags: [Experience,Spelling Bee]
+tags: [Experience, Spelling Bee]
 ---
 
 ![Dawn Spelling Bee Logo](https://1.bp.blogspot.com/-bn-pQ_PB-XM/VRu52zpmB0I/AAAAAAAAmSQ/rWhCMe_yItE/s1600/2012-10-314996_246992745342213_4692160_n.jpg)
@@ -17,8 +17,8 @@ We did our registration at 2 PM and our pool 15-17 started at almost 3. Sadly, w
 
 Out of the total 6 words that we were asked, we got 4 right. The fifth one was "epicurean" and we spelt i instead of e. Comparatively this was easier than our other words but in confusion we got it wrong. I take responsibility for this misspelling :(. The sixth one although it was difficult we would have had better chance of getting it correct if not for the immense pressure and tension we had gotten in(due to the last incorrect word).
 
-But the thing we were happy about after this all process was that we knew almost every word asked in the day. It was just that this all competition is about luck and I think we were not that lucky that day. 
+But the thing we were happy about after this all process was that we knew almost every word asked in the day. It was just that this all competition is about luck and I think we were not that lucky that day.
 
 We learned a lot from this experience and all this preparation will not go in vain. We have planned to continue learning and using these words. Spelling bee competitions mostly are won through luck because only 6 randomly selected words are asked and participants prepare about 6 to 7 thousand words. Memorising such a big amount of words is itself a big achievement.
 
-We are thankful to Allah Almighty for providing us such a big opportunity. We are also indebted to our teachers, family and friends who supported and helped us at all times. Getting a chance to represent the school and Upper Sindh is an achievement we would never forget. We are hoping to try again next year and I hope that we would have better success next time. 
+We are thankful to Allah Almighty for providing us such a big opportunity. We are also indebted to our teachers, family and friends who supported and helped us at all times. Getting a chance to represent the school and Upper Sindh is an achievement we would never forget. We are hoping to try again next year and I hope that we would have better success next time.

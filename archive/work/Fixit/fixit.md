@@ -1,7 +1,7 @@
 ---
 title: "Fixit"
 highlight: true
-date: '2018-10-21T12:00:00.000+08:00'
+date: "2018-10-21T12:00:00.000+08:00"
 excerpt: "Optimize home services through pooling"
 header:
   teaser: fixit_technician.png
@@ -48,7 +48,7 @@ Optimize home services through pooling. Fixit is a mobile platform which enables
 
 ## Links
 
-* [GitHub](https://github.com/Chhavisharma15/Fixit)
+- [GitHub](https://github.com/Chhavisharma15/Fixit)
 
 ## Team
 

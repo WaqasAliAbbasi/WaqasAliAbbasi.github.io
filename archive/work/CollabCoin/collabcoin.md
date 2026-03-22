@@ -1,7 +1,7 @@
 ---
 title: "CollabCoin"
 highlight: true
-date: '2017-12-03T12:00:00.000+08:00'
+date: "2017-12-03T12:00:00.000+08:00"
 excerpt: "A decentralized crowdsourced investment fund."
 header:
   teaser: scbgrandfinals.jpg
@@ -37,12 +37,12 @@ A decentralized crowdsourced investment fund.
 
 ## Links
 
-* [GitHub](https://github.com/waqasaliabbasi/CollabCoin)
+- [GitHub](https://github.com/waqasaliabbasi/CollabCoin)
 
 ## Awards
 
-* Runner-up: Shanghai Commercial Bank Fintech Hackathon Grand Finals (50,000 RMB)
-* Winner: Shanghai Commercial Bank Fintech Hackathon Hong Kong Round (20,000 HKD)
+- Runner-up: Shanghai Commercial Bank Fintech Hackathon Grand Finals (50,000 RMB)
+- Winner: Shanghai Commercial Bank Fintech Hackathon Hong Kong Round (20,000 HKD)
 
 ## Summary
 

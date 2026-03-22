@@ -1,6 +1,6 @@
 ---
 title: "Parity"
-date: '2018-04-08T12:00:00.000+08:00'
+date: "2018-04-08T12:00:00.000+08:00"
 excerpt: "A way to connect underprivileged with law firms looking to do pro-bono work. Through a very easy mobile app, clients record their narrative in any language they prefer which is transcribed and translated to English/Cantonese via a Deep Learning model. The translators verify the translation and modify if needed. Case details of the client are put on the platform and law firms can access the platform through a React web app."
 header:
   teaser: lawfirm.png
@@ -15,7 +15,7 @@ A way to connect underprivileged with law firms looking to do pro-bono work.
 
 ## Links
 
-* [GitHub](https://github.com/WaqasAliAbbasi/Parity)
+- [GitHub](https://github.com/WaqasAliAbbasi/Parity)
 
 ## Summary
 

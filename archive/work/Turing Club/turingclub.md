@@ -1,6 +1,6 @@
 ---
 title: "Chi Sun Turing Club"
-date: '2018-03-30T12:00:00.000+08:00'
+date: "2018-03-30T12:00:00.000+08:00"
 excerpt: "A HKU group of technical and non-technical students working on smart campus solutions."
 header:
   teaser: firstmeeting_group.jpg
@@ -15,7 +15,7 @@ A HKU group of technical and non-technical students working on smart campus solu
 
 ## Links
 
-* [GitHub](https://github.com/hkuturingclub)
+- [GitHub](https://github.com/hkuturingclub)
 
 ## Information
 

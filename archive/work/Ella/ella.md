@@ -1,6 +1,6 @@
 ---
 title: "Ella"
-date: '2017-01-21T12:00:00.000+08:00'
+date: "2017-01-21T12:00:00.000+08:00"
 excerpt: "A Personal Financial Assistant."
 header:
   teaser: ella2.png
@@ -27,7 +27,7 @@ A Personal Financial Assistant.
 
 ## Links
 
-* [GitHub](https://github.com/WaqasAliAbbasi/Ella)
+- [GitHub](https://github.com/WaqasAliAbbasi/Ella)
 
 ## Update 2
 

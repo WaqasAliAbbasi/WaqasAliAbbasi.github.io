@@ -1,6 +1,6 @@
 ---
 title: "Egalex"
-date: '2018-01-25T12:00:00.000+08:00'
+date: "2018-01-25T12:00:00.000+08:00"
 excerpt: "A decentralized pro-bono network for law firms."
 header:
   teaser: app.png
@@ -27,7 +27,7 @@ A decentralized pro-bono network for law firms.
 
 ## Links
 
-* [GitHub](https://github.com/piy0999/Egalex)
+- [GitHub](https://github.com/piy0999/Egalex)
 
 ## About
 

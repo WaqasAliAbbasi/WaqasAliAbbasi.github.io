@@ -44,7 +44,7 @@ export default function Page() {
       {AWARDS.sort(
         (a, b) =>
           a.rank - b.rank ||
-          new Date(b.date).getTime() - new Date(a.date).getTime()
+          new Date(b.date).getTime() - new Date(a.date).getTime(),
       ).map((award, key) => (
         <>
           <Achievement key={key} {...award} />

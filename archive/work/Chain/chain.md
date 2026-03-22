@@ -1,6 +1,6 @@
 ---
 title: "Chain"
-date: '2018-03-23T12:00:00.000+08:00'
+date: "2018-03-23T12:00:00.000+08:00"
 excerpt: "A tech-driven social initiative that relies on viral techniques and gamification to gather volunteers at HKU."
 header:
   teaser: exponential_growth.png
@@ -15,13 +15,13 @@ A tech-driven social initiative that relies on viral techniques and gamification
 
 ## Links
 
-* [Proposal](https://docs.google.com/document/d/1V2SMptQyJvKmpCpOXL3AjZbPwyiXQWWBSbabmpus0Gs/edit?usp=sharing)
-* [Project Teaser](https://docs.google.com/document/d/1PgvG6Z-f-oQ1QzFYyJHryjI-bfg_TGbvp2dDZblii_Q/edit?usp=sharing)
-* [Presentation](https://drive.google.com/file/d/1xofNbG-Ap3QpsXohJc5s77sBiH1fIxFd/view?usp=sharing)
+- [Proposal](https://docs.google.com/document/d/1V2SMptQyJvKmpCpOXL3AjZbPwyiXQWWBSbabmpus0Gs/edit?usp=sharing)
+- [Project Teaser](https://docs.google.com/document/d/1PgvG6Z-f-oQ1QzFYyJHryjI-bfg_TGbvp2dDZblii_Q/edit?usp=sharing)
+- [Presentation](https://drive.google.com/file/d/1xofNbG-Ap3QpsXohJc5s77sBiH1fIxFd/view?usp=sharing)
 
 ## Awards
 
-* Runner-up Global Challenges, Local Solutions 2018 (University of Hong Kong)
+- Runner-up Global Challenges, Local Solutions 2018 (University of Hong Kong)
 
 Our final product is a mobile application which combines social networking, gamification of human interactions and social service.
 
@@ -29,14 +29,14 @@ Our final product is a mobile application which combines social networking, gami
 
 A real-life scenario is:
 
-* David, an HKU Year 3 Engineering student is approached by John, an HKU Year 2 Psychology student.
+- David, an HKU Year 3 Engineering student is approached by John, an HKU Year 2 Psychology student.
   John talks about about the social app, its non-profit goals and what a user has to do.
-* David finds it interesting and signs up. He is then asked to approach one other person.
-* David then approaches a classmate (Jennifer) he has always wanted to talk to. He breaks the ice via the app and convinces her to sign-up.
-* The chain continues until 9 people have signed-up.
-* The app automatically creates 3 chat groups consisting of people who haven’t interacted with each other on the chain.
-* The app assigns each group a doable social service task, for example to take leftovers from 3 HKU restaurants to 12 homeless people in Kennedy Town, Hong Kong.
-* Once the task is complete they will be requested to invite at least 1 more person each.
+- David finds it interesting and signs up. He is then asked to approach one other person.
+- David then approaches a classmate (Jennifer) he has always wanted to talk to. He breaks the ice via the app and convinces her to sign-up.
+- The chain continues until 9 people have signed-up.
+- The app automatically creates 3 chat groups consisting of people who haven’t interacted with each other on the chain.
+- The app assigns each group a doable social service task, for example to take leftovers from 3 HKU restaurants to 12 homeless people in Kennedy Town, Hong Kong.
+- Once the task is complete they will be requested to invite at least 1 more person each.
 
 ## Team
 

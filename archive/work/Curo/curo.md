@@ -1,6 +1,6 @@
 ---
 title: "Curo"
-date: '2017-08-20T12:00:00.000+08:00'
+date: "2017-08-20T12:00:00.000+08:00"
 excerpt: "Curo, a social bot, reminds you to take surveys. The amount generated goes to social organizations and proof is sent back to users."
 header:
   teaser: curo2.jpg
@@ -27,7 +27,7 @@ Curo, a social bot, reminds you to take surveys. The amount generated goes to so
 
 ## Links
 
-* [GitHub](https://github.com/WaqasAliAbbasi/CuroBot)
+- [GitHub](https://github.com/WaqasAliAbbasi/CuroBot)
 
 ## Team
 
