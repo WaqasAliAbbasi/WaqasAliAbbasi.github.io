@@ -30,7 +30,7 @@ export const ToggleTheme = () => {
       title="Toggle Theme"
       onClick={toggleTheme}
       type="button"
-      className="rounded outline outline-1 p-1 dark:hover:bg-gray-700 hover:bg-gray-100"
+      className="rounded-sm outline-solid outline-1 p-1 dark:hover:bg-gray-700 hover:bg-gray-100"
     >
       <Icon className="h-4 w-4" />
     </button>

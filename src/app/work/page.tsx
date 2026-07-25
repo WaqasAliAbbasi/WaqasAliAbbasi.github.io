@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const Projects: React.FC<{ showAll: boolean }> = ({ showAll }) => (
-  <div className="grid grid-cols-[repeat(auto-fit,_minmax(150px,_1fr))] gap-6">
+  <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-6">
     {projects
       .filter(({ metadata: { highlight } }) => showAll || !!highlight)
       .map(({ slug, metadata: { title, image, date, description } }) => (
