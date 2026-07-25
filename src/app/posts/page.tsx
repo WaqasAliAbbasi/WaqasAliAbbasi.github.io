@@ -1,19 +1,11 @@
 import { Metadata } from "next";
-import { metadata as HowToTestInHaskellMetaData } from "./how-to-test-in-haskell-using-comments/page";
-import { PostMetaData } from "@/types/content";
 import dayjs from "dayjs";
 import Link from "next/link";
+import { posts } from "@/content/posts";
 
 export const metadata: Metadata = {
   title: "Posts",
 };
-
-const posts: Array<{ slug: string; metadata: PostMetaData }> = [
-  {
-    slug: "how-to-test-in-haskell-using-comments",
-    metadata: HowToTestInHaskellMetaData,
-  },
-];
 
 export default function Page() {
   return (

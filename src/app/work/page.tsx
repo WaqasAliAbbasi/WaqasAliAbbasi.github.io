@@ -1,22 +1,14 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { metadata as StudentBaseMetaData } from "./studentbase/page";
-import { ProjectMetaData } from "@/types/content";
 import dayjs from "dayjs";
 import React from "react";
 import { ToggleFilteredProjects } from "./ToggleFilteredProjects";
 import Link from "next/link";
+import { projects } from "@/content/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
 };
-
-const projects: Array<{ slug: string; metadata: ProjectMetaData }> = [
-  {
-    slug: "studentbase",
-    metadata: StudentBaseMetaData,
-  },
-].sort((a, b) => b.metadata.date.getTime() - a.metadata.date.getTime());
 
 const Projects: React.FC<{ showAll: boolean }> = ({ showAll }) => (
   <div className="grid grid-cols-[repeat(auto-fit,_minmax(150px,_1fr))] gap-6">

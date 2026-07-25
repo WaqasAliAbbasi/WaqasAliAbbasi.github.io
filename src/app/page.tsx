@@ -8,13 +8,14 @@ import CodeBracketIcon from "@heroicons/react/24/solid/CodeBracketIcon";
 import { SocialLink } from "@/components/SocialLink";
 import React from "react";
 import { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Home | Waqas Ali",
   description: "Hi, I am Waqas and this is my personal website.",
   openGraph: {
     title: "Home | Waqas Ali",
-    url: "https://waqasali.dev",
+    url: SITE_URL,
     description: "Hi, I am Waqas and this is my personal website.",
     siteName: "Waqas Ali",
     locale: "en_US",
