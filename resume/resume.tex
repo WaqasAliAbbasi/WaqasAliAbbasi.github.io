@@ -12,10 +12,12 @@
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+% Link colour: dark enough to stay legible in greyscale print, blue enough to read as a link
+\definecolor{linkblue}{HTML}{1A4D8F}
+\usepackage[colorlinks=true,urlcolor=linkblue,linkcolor=linkblue,citecolor=linkblue]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -97,28 +99,24 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://waqasali.dev/}{\Large Waqas Ali}} & \href{https://linkedin.com/in/waqasaliabbasi}{linkedin.com/in/waqasaliabbasi}\\
-  \href{mailto:waqas.abbasi@outlook.com}{waqas.abbasi@outlook.com} & \href{tel:+85259867711}{+852 5986 7711}\\
+  \textbf{\Large Waqas Ali} & \href{mailto:waqas.abbasi@outlook.com}{waqas.abbasi@outlook.com} $\cdot$ \href{https://linkedin.com/in/waqasaliabbasi}{linkedin.com/in/waqasaliabbasi}\\
+  Hong Kong & \href{https://waqasali.dev/}{waqasali.dev} $\cdot$ \href{https://github.com/WaqasAliAbbasi}{github.com/WaqasAliAbbasi}\\
 \end{tabular*}
 
 \section{Summary}
-Software Engineer with 4.5 years of full stack and data engineering experience. Track record of delivering simple solutions to complex problems in finance. Skilled in developing scalable solutions, optimizing performance, and automating processes. Passionate about technology and committed to continuous learning.
+Software Engineer with 6 years of full stack and data engineering experience. Track record of delivering simple solutions to complex problems in finance. Skilled in developing scalable solutions, optimizing performance, and automating processes. Passionate about technology and committed to continuous learning.
 
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Qube Research \& Technologies}{Hong Kong}
-      {Software Engineer}{April 2024 - Current}
+      {Software Engineer (Quantitative Technologist); Tech Lead, DataOps and Automation}{April 2024 -- Present}
     \resumeSubheading
       {Credit Suisse}{Hong Kong}
-      {Software Engineer}{August 2020 - March 2024}
+      {Software Engineer; Assistant Vice President}{August 2020 -- March 2024}
       \resumeItemListStart
         \resumeItem{Wealth Management Analytics \& Lead Management}
           {Rebuilt the analytics platform achieving 36x improvement in query performance (from 1m 48s to 3s for the same query). Implemented a lead management system for capturing leads and tracking conversions (4500 leads and USD 50M tracked orders in first 6 months). Enabled data-driven decision making through performance analysis of investment ideas and client facing teams. Used Prefect for data ingestion workflows, ClickHouse/SQL for OLAP (Online Analytical Processing) and Python for the REST API.}
@@ -135,7 +133,7 @@ Software Engineer with 4.5 years of full stack and data engineering experience. 
       {The University of Hong Kong}{}
       {Bachelor of Engineering in Computer Science (Minor in Cognitive Science)}{3.51/4.30 GPA}{Full Scholarship}{Sept. 2016 -- May 2020}
   \resumeSubHeadingListEnd
- 
+
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{\href{https://studentbase.app}{studentbase.app}}
@@ -147,13 +145,13 @@ Software Engineer with 4.5 years of full stack and data engineering experience. 
     \resumeSubItem{Geni}
       {Added the ability to use nested Clojure data structures with Apache Spark. Implemented transformation to Spark DataFrames with automatic type inference. \href{https://github.com/zero-one-group/geni/pull/336}{\#336} \href{https://github.com/zero-one-group/geni/pull/340}{\#340}}
   \resumeSubHeadingListEnd
-  
+
 \section{Skills}
  \resumeSubHeadingListStart
     \resumeSubItem{Programming Languages}
-      {Clojure, Python, Java, Kotlin, Go, JavaScript/TypeScript, SQL}
+      {Rust, Clojure, Python, Java, Kotlin, Go, JavaScript/TypeScript, SQL}
     \resumeSubItem{Data Engineering}
-      {Apache Spark, Prefect, ClickHouse, S3}
+      {Apache Spark, Kafka, Prefect, ClickHouse, S3}
     \resumeSubItem{Web Development}
       {HTML, CSS, React, Node.js, GraphQL, MongoDB, Figma}
     \resumeSubItem{Infrastructure}
