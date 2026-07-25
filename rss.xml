@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Waqas Ali</title>
+    <link>https://waqasali.dev</link>
+    <description>Posts from Waqas Ali</description>
+    <atom:link href="https://waqasali.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to test in Haskell using comments?</title>
+      <link>https://waqasali.dev/posts/how-to-test-in-haskell-using-comments</link>
+      <guid>https://waqasali.dev/posts/how-to-test-in-haskell-using-comments</guid>
+      <pubDate>Thu, 12 Mar 2020 19:46:00 GMT</pubDate>
+      <description>If you want to easily test your functions in Haskell, you can do so by writing inputs and their expected responses right above your functions as comments. All you need is a package called doctest.</description>
+    </item>
+  </channel>
+</rss>

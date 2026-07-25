@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://waqasali.dev</loc>
+<lastmod>2020-03-12T19:46:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://waqasali.dev/work</loc>
+<lastmod>2020-01-11T04:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://waqasali.dev/work/studentbase</loc>
+<lastmod>2020-01-11T04:00:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://waqasali.dev/posts</loc>
+<lastmod>2020-03-12T19:46:00.000Z</lastmod>
+</url>
+<url>
+<loc>https://waqasali.dev/posts/how-to-test-in-haskell-using-comments</loc>
+<lastmod>2020-03-12T19:46:00.000Z</lastmod>
+</url>
+</urlset>
