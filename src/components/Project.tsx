@@ -12,7 +12,9 @@ export const Project: React.FC<{
       <h1 className="text-2xl font-bold">{title}</h1>
       <h3 className="mt-2">{dayjs(date).format("MMMM D, YYYY")}</h3>
       <Divider className="my-4" />
-      <article className="prose dark:prose-invert">{children}</article>
+      <article className="prose prose-sm sm:prose-base max-w-none wrap-break-word dark:prose-invert">
+        {children}
+      </article>
     </div>
   );
 };

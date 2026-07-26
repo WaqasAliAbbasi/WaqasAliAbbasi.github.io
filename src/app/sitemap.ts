@@ -13,7 +13,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const postDates = posts.map(({ metadata: { date } }) => date);
 
   return [
-    { url: SITE_URL, lastModified: mostRecent([...projectDates, ...postDates]) },
+    {
+      url: SITE_URL,
+      lastModified: mostRecent([...projectDates, ...postDates]),
+    },
     { url: `${SITE_URL}/work`, lastModified: mostRecent(projectDates) },
     ...projects.map(({ slug, metadata: { date } }) => ({
       url: `${SITE_URL}/work/${slug}`,

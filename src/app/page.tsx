@@ -40,7 +40,7 @@ export default function Page() {
       <Divider />
       <section>
         <h1 className="font-semibold">Get In Touch</h1>
-        <div className="mt-1 flex flex-row justify-between">
+        <div className="mt-1 flex flex-row flex-wrap gap-x-6 gap-y-2 justify-between">
           <SocialLink
             icon={EnvelopeIcon}
             text="Email"

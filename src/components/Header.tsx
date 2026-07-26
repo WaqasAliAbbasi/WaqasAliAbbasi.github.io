@@ -15,14 +15,17 @@ export const Header: React.FC<{ siteTitle?: string }> = ({ siteTitle }) => {
 
   return (
     <>
-      <div className="flex flex-row justify-between items-center">
-        <Link href="/" className="flex flex-row items-center gap-4">
+      <div className="flex flex-row justify-between items-center gap-3">
+        <Link
+          href="/"
+          className="flex flex-row items-center gap-3 sm:gap-4 min-w-0"
+        >
           <Image
             alt="Waqas Ali Portrait"
             src={portrait}
-            className="inline-block h-16 w-16 rounded-full"
+            className="inline-block h-12 w-12 sm:h-16 sm:w-16 shrink-0 rounded-full"
           />
-          <h1 className="text-2xl font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
+          <h1 className="text-2xl font-bold leading-7 truncate sm:text-3xl sm:tracking-tight">
             Waqas Ali
           </h1>
         </Link>

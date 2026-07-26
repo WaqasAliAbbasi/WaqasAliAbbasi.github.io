@@ -11,13 +11,17 @@ export const metadata: Metadata = {
 };
 
 const Projects: React.FC<{ showAll: boolean }> = ({ showAll }) => (
-  <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-6">
+  <div className="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-6">
     {projects
       .filter(({ metadata: { highlight } }) => showAll || !!highlight)
       .map(({ slug, metadata: { title, image, date, description } }) => (
         <Link key={slug} href={`/work/${slug}`}>
           <div>
-            <Image src={image} alt={title} className="h-24 object-cover	" />
+            <Image
+              src={image}
+              alt={title}
+              className="h-24 w-full object-cover"
+            />
             <h3 className="font-bold mt-2">{title}</h3>
             <p className="text-xs">{dayjs(date).format("MMMM D, YYYY")}</p>
             <p className="text-xs mt-1 line-clamp-4">{description}</p>

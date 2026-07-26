@@ -7,7 +7,7 @@ export const Footer: React.FC<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLHRElement>
 > = ({ className = "", ...props }) => (
   <footer
-    className={`flex mt-1 justify-center items-center text-xs gap-x-1 ${className}`}
+    className={`flex flex-wrap mt-1 justify-center items-center text-center text-xs gap-x-1 ${className}`}
     {...props}
   >
     <Link href="/rss.xml" title="RSS Feed" className="flex">

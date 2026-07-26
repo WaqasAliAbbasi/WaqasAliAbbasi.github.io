@@ -18,7 +18,9 @@ export const metadata: Metadata = {
     default: "Waqas Ali",
   },
   openGraph: {
-    images: [{ url: portrait.src, width: portrait.width, height: portrait.height }],
+    images: [
+      { url: portrait.src, width: portrait.width, height: portrait.height },
+    ],
   },
   alternates: {
     types: {
@@ -37,7 +39,7 @@ export default function RootLayout({
       <ClientScripts />
       <body className={inter.className}>
         <Providers>
-          <main className="flex min-h-screen flex-col gap-4 py-11 px-5 max-w-2xl mx-auto">
+          <main className="flex min-h-dvh flex-col gap-4 py-8 sm:py-11 px-5 sm:px-6 max-w-2xl mx-auto">
             <Header />
             <div className="flex-1">{children}</div>
             <Footer />
