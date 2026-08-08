@@ -2,5 +2,5 @@
 2:I[22016,["/_next/static/chunks/2rc8-uegajf4d.js","/_next/static/chunks/14mrh2-p_w84d.js"],""]
 3:I[97367,["/_next/static/chunks/2rc8-uegajf4d.js","/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"children":[["$","h2",null,{"className":"text-2xl font-bold","children":"Not Found"}],["$","p",null,{"children":"You just hit a route that doesn't exist... the sadness."}],["$","$L2",null,{"href":"/","className":"underline","children":"Go back home"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"eTeHVnGxe_QY-Oil5enDW"}
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"children":[["$","h2",null,{"className":"text-2xl font-bold","children":"Not Found"}],["$","p",null,{"children":"You just hit a route that doesn't exist... the sadness."}],["$","$L2",null,{"href":"/","className":"underline","children":"Go back home"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"vk92RKhylv3Mds8ftKhkb"}
 5:null
