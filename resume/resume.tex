@@ -54,7 +54,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{ #2 \vspace{-2pt}}
+    \textbf{#1:}{ #2 \vspace{-2pt}}
   }
 }
 
@@ -107,13 +107,16 @@
 \end{tabular*}
 
 \section{Summary}
-Software Engineer with 6 years of full stack and data engineering experience. Track record of delivering simple solutions to complex problems in finance. Skilled in developing scalable solutions, optimizing performance, and automating processes. Passionate about technology and committed to continuous learning.
+Software engineer and tech lead working on data infrastructure and distributed systems in finance.
 
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Qube Research \& Technologies}{Hong Kong}
       {Software Engineer (Quantitative Technologist); Tech Lead, DataOps and Automation}{April 2024 -- Present}
+      \resumeItemListStart
+        \item\small{Tech lead on the firm's core data platform, owning the data lifecycle and catalog. Re-architected its storage so data can live in several databases at once, and designed the orchestration that migrates and syncs data across them. I also lead developer experience for the larger team. Rust, ClickHouse, PostgreSQL, Kafka and Kubernetes, across AWS and on-premise.}
+      \resumeItemListEnd
     \resumeSubheading
       {Credit Suisse}{Hong Kong}
       {Software Engineer; Assistant Vice President}{August 2020 -- March 2024}
@@ -122,8 +125,12 @@ Software Engineer with 6 years of full stack and data engineering experience. Tr
           {Rebuilt the analytics platform achieving 36x improvement in query performance (from 1m 48s to 3s for the same query). Implemented a lead management system for capturing leads and tracking conversions (4500 leads and USD 50M tracked orders in first 6 months). Enabled data-driven decision making through performance analysis of investment ideas and client facing teams. Used Prefect for data ingestion workflows, ClickHouse/SQL for OLAP (Online Analytical Processing) and Python for the REST API.}
         \resumeItem{Instrument Events}
           {Proactively notified clients of significant events such as research rating downgrades, bond maturities, and price fluctuations, by monitoring data for 50,000 instruments on a daily basis. Analyzed 1M rows under 10 minutes using Clojure and Apache Spark. Achieved auto-scaling and cost optimization by migrating workflows from a self-maintained Spark cluster to the company's Kubernetes cluster, simplifying infrastructure and enabling on-demand resource usage.}
-        \resumeItem{Client Advisory}
-          {Dramatically reduced front office workload by automating checks and content generation. Matched new investment ideas across thousands of clients according to their regulatory requirements and investment preferences. Replaced manual emails with a system allowing generation, review, preview and send-off of personalized emails, messages, and push notifications. (React, Styled Components, Typescript, Node.js, MongoDB, GraphQL)}
+        \resumeItem{Risk Data Aggregation}
+          {Doubled throughput and cut wasted compute by moving a pipeline from threads in a monolith on a virtual machine to 25 task processors on Kubernetes, autoscaling on queue size. (Kotlin, Kafka, ZooKeeper, Kafka Connect, Flux GitOps)}
+        \resumeItem{Market Data}
+          {Cut production errors by 80\% by rewriting an unreliable closed-source JNI library in Clojure, implementing the PermServer protocol over TCP sockets with core.async.}
+        \resumeItem{Observability}
+          {Implemented the OpenTelemetry collector, ClickHouse for logs and metrics, Kafka Connect and Prometheus Alertmanager. Wrote alerts as infrastructure-as-code with unit tests, and was on call for the platform.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -137,7 +144,7 @@ Software Engineer with 6 years of full stack and data engineering experience. Tr
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{\href{https://studentbase.app}{studentbase.app}}
-      {Developed a platform for high school students used by 25,000 unique users every month. Implemented features such as content upload, moderation, comments, upvotes, past paper solving, and mistake tracking. Leveraged React, Next.js, TypeScript, Node.js, GraphQL, Prisma, PostgreSQL, Redis, Prometheus, GitHub Actions for CI/CD while utilizing Terraform for provisioning/configuration of DNS, Certificates, Virtual Machines, S3, and CDN.}
+      {Developed a platform for high school students used by 25,000 unique users every month. Implemented features such as content upload, moderation, comments, upvotes, past paper solving, and mistake tracking. Seed-funded with HK\$100,000 by Hong Kong Science Park; led four part-time engineers and an intern. Leveraged React, Next.js, TypeScript, Node.js, GraphQL, Prisma, PostgreSQL, Redis, Prometheus, GitHub Actions for CI/CD while utilizing Terraform for provisioning/configuration of DNS, Certificates, Virtual Machines, S3, and CDN.}
   \resumeSubHeadingListEnd
 
 \section{Open Source Contributions}
@@ -149,13 +156,13 @@ Software Engineer with 6 years of full stack and data engineering experience. Tr
 \section{Skills}
  \resumeSubHeadingListStart
     \resumeSubItem{Programming Languages}
-      {Rust, Clojure, Python, Java, Kotlin, Go, JavaScript/TypeScript, SQL}
+      {Rust, Clojure, Python, Kotlin, JavaScript/TypeScript, SQL}
     \resumeSubItem{Data Engineering}
-      {Apache Spark, Kafka, Prefect, ClickHouse, S3}
+      {Apache Spark, Kafka, Prefect, ClickHouse, PostgreSQL, Arrow, Parquet, S3}
     \resumeSubItem{Web Development}
-      {HTML, CSS, React, Node.js, GraphQL, MongoDB, Figma}
+      {HTML, CSS, React, Next.js, Node.js, GraphQL, MongoDB}
     \resumeSubItem{Infrastructure}
-      {Linux, Kubernetes, Docker, Terraform, Prometheus, Nginx, Ansible}
+      {Linux, Kubernetes, AWS, Docker, Terraform, OpenTelemetry, Prometheus, Bazel, GitLab CI}
  \resumeSubHeadingListEnd
 
 \end{document}

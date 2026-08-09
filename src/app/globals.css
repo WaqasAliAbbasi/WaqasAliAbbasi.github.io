@@ -4,16 +4,47 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme inline {
+  --color-accent: rgb(var(--accent));
+}
+
 :root {
   --foreground-rgb: 26, 32, 44;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
+  /* Matches linkblue in resume/resume.tex */
+  --accent: 26 77 143;
 }
 
 [class="dark"] {
   --foreground-rgb: 255, 255, 255, 0.92;
   --background-start-rgb: 26, 32, 44;
   --background-end-rgb: 26, 32, 44;
+  /* Lighter step of the same hue, for contrast against the dark surface */
+  --accent: 138 176 227;
+}
+
+/*
+ * Career timeline. Rows below the fold fade up as they scroll onto the rail.
+ * TimelineRow only sets `data-reveal` from JavaScript, on rows it has an
+ * observer for, so these rules can never strand a row at opacity 0.
+ */
+.timeline-row[data-reveal]:not([data-revealed]) {
+  opacity: 0;
+  translate: 0 0.5rem;
+}
+
+.timeline-row[data-revealed] {
+  transition:
+    opacity 500ms ease-out,
+    translate 500ms ease-out;
+}
+
+@media print {
+  .timeline-row[data-reveal]:not([data-revealed]) {
+    opacity: 1;
+    translate: none;
+  }
 }
 
 body {

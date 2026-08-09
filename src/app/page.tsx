@@ -29,7 +29,7 @@ export default function Page() {
       <Panel
         subheading="Currently"
         heading="Qube Research & Technologies"
-        subtitle="Software Engineer"
+        subtitle="Software Engineer, Tech Lead"
       />
       <Divider />
       <Panel

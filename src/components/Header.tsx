@@ -5,10 +5,12 @@ import Link from "next/link";
 import portrait from "@/assets/portrait.jpg";
 
 import HomeIcon from "@heroicons/react/24/outline/HomeIcon";
+import { NavLink } from "./NavLink";
 import { ToggleTheme } from "./ToggleTheme";
 
 export const Header: React.FC<{ siteTitle?: string }> = ({ siteTitle }) => {
   const navigationBar: { title: string; path: string }[] = [
+    { title: "Career", path: "/career" },
     { title: "Projects", path: "/work" },
     { title: "Posts", path: "/posts" },
   ];
@@ -32,17 +34,21 @@ export const Header: React.FC<{ siteTitle?: string }> = ({ siteTitle }) => {
         <ToggleTheme />
       </div>
       <div className="flex flex-row flex-wrap gap-x-2 items-center">
-        <Link href="/">
+        <NavLink href="/" label="Home">
           <HomeIcon className="w-4" />
-        </Link>
+        </NavLink>
         <span>|</span>
-        <Link href="/assets/docs/resume.pdf" target="_blank">
+        <Link
+          href="/assets/docs/resume.pdf"
+          target="_blank"
+          className="hover:text-accent"
+        >
           Resume
         </Link>
         {navigationBar.map(({ title, path }) => (
-          <Link key={path} href={path}>
+          <NavLink key={path} href={path}>
             {title}
-          </Link>
+          </NavLink>
         ))}
       </div>
     </>

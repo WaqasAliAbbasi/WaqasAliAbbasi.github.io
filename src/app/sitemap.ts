@@ -17,6 +17,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: SITE_URL,
       lastModified: mostRecent([...projectDates, ...postDates]),
     },
+    {
+      url: `${SITE_URL}/career`,
+      lastModified: new Date(process.env.CAREER_UPDATED!),
+    },
     { url: `${SITE_URL}/work`, lastModified: mostRecent(projectDates) },
     ...projects.map(({ slug, metadata: { date } }) => ({
       url: `${SITE_URL}/work/${slug}`,
