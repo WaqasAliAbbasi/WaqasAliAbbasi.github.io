@@ -62,7 +62,7 @@ export const career: CareerEntry[] = [
     monogram: "QRT",
     defaultOpen: true,
     summary:
-      "Tech lead on the firm's core data platform, owning the data lifecycle and catalog. Re-architected its storage so data can live in several databases at once, and designed the orchestration that migrates and syncs data across them. Rebuilt the team's observability on OpenTelemetry, putting logs, metrics and traces from five Kubernetes clusters in one system at a tenth of the cost. I also lead developer experience for the larger team.",
+      "Tech lead on the firm's core data platform, owning the data lifecycle and catalog. Led the re-architecture of its storage so data can live in several databases at once, and designed the orchestration that migrates and syncs data across them. Rebuilt the team's observability on OpenTelemetry, putting logs, metrics and traces from five Kubernetes clusters in one system at much lower cost. I also lead developer experience for the larger team.",
     stack: [
       siRust,
       siClickhouse,
