@@ -68,7 +68,6 @@ export const career: CareerEntry[] = [
       "Ran daily checks across 50,000 instruments for rating changes, maturities and price moves. A million rows, under ten minutes, on Spark and Clojure.",
       "Took a threaded monolith apart into 25 autoscaling processors on Kubernetes and got twice the throughput out of it.",
       "Rewrote an unreliable closed-source market data library in Clojure, which cut production errors by 80%.",
-      "Set up the observability platform on OpenTelemetry, ClickHouse, Kafka Connect and Alertmanager, wrote its alerts as tested infrastructure code, and was on call for it.",
     ],
     stack: [
       siClojure,
