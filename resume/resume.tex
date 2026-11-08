@@ -116,6 +116,7 @@ Software engineer and tech lead working on data infrastructure and distributed s
       {Software Engineer (Quantitative Technologist); Tech Lead, DataOps and Automation}{April 2024 -- Present}
       \resumeItemListStart
         \item\small{Tech lead on the firm's core data platform, owning the data lifecycle and catalog. Re-architected its storage so data can live in several databases at once, and designed the orchestration that migrates and syncs data across them. I also lead developer experience for the larger team. Rust, ClickHouse, PostgreSQL, Kafka and Kubernetes, across AWS and on-premise.}
+        \item\small{Rebuilt the team's observability on OpenTelemetry: logs, metrics, traces and queries in one system across five Kubernetes clusters from a single config, at 10x lower cost, with Prometheus-native, unit-tested alerts.}
       \resumeItemListEnd
     \resumeSubheading
       {Credit Suisse}{Hong Kong}
@@ -129,8 +130,6 @@ Software engineer and tech lead working on data infrastructure and distributed s
           {Doubled throughput and cut wasted compute by moving a pipeline from threads in a monolith on a virtual machine to 25 task processors on Kubernetes, autoscaling on queue size. (Kotlin, Kafka, ZooKeeper, Kafka Connect, Flux GitOps)}
         \resumeItem{Market Data}
           {Cut production errors by 80\% by rewriting an unreliable closed-source JNI library in Clojure, implementing the PermServer protocol over TCP sockets with core.async.}
-        \resumeItem{Observability}
-          {Implemented the OpenTelemetry collector, ClickHouse for logs and metrics, Kafka Connect and Prometheus Alertmanager. Wrote alerts as infrastructure-as-code with unit tests, and was on call for the platform.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
