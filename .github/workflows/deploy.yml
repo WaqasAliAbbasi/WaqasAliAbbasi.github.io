@@ -13,13 +13,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "25"
+      # Same image and engine as the private repo that generates resume.tex. Two passes
+      # so hyperref's PDF bookmarks get embedded.
       - name: Prepare Resume 📝
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: |
-            resume/*.tex
-          glob_root_file: true
-          work_in_root_file_dir: true
+        run: |
+          docker run --rm -v "$PWD/resume":/w -w /w --user "$(id -u):$(id -g)" \
+            texlive/texlive:latest sh -c '"$@" && "$@"' sh \
+            pdflatex -interaction=nonstopmode -halt-on-error resume.tex
       - name: Copy Resume 📄
         run: |
           mkdir -p ./public/assets/docs
